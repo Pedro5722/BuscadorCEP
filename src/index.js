@@ -32,6 +32,7 @@ function buscaCep(cepSelected){
     return '<ul></ul>';
   }
 }
-
+const autoSearch = document.getElementById("cepInput");
+autoSearch.addEventListener("keyup",api)
 const buscar = document.getElementById("buscar");
 buscar.addEventListener("click",api);
